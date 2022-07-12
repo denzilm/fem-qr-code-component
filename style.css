@@ -1,0 +1,51 @@
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-gray: hsl(212, 45%, 89%);
+  --color-dark-gray: hsl(220, 15%, 55%);
+  --color-heading: hsl(218, 44%, 22%);
+
+  --font-family: Outfit, Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  background-color: var(--color-light-gray);
+  font-family: var(--font-family);
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.qr-code {
+  padding: 1.5rem;
+  width: 15%;
+  min-width: 300px;
+  margin: 10rem auto;
+  background-color: var(--color-white);
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.qr-code * {
+  margin-bottom: 1.5rem;
+}
+
+.qr-code__img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.qr-code__paragraph {
+  color: var(--color-dark-gray);
+}
